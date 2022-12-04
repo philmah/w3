@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    <script>
+        function ShowHide() {
+            var x = document.getElementById("mpassword");
+            if (x.type === "password") {
+            x.type = "text";
+            } else {
+            x.type = "password";
+            }}
+    </script>
+</head>
+<body>
+    <main>
+        <form action="main.html" name="userLogin">
+            <fieldset>
+                <div class="logo">
+                    <p>Coffee house</p>
+                </div>
+                <legend>User login</legend>
+                <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="mpassword">Password:</label>
+                    <input type="password" id="mpassword" name="password" required="required"><br>
+                    <label for="showhidecheck">Show password</label>
+                    <input type="checkbox" id="showhidecheck" onclick="ShowHide()"><br><br>
+                    <button type="submit" name="login" class="btn">Log in</button>
+                    <a href="register.html" class="btnregister">Register</a>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <img src="https://img.freepik.com/premium-vector/cafe-logo-coffee-vector-illustration-editable_10135-978.jpg?w=50" alt="logo" />
+        <a href="">Term </a>
+        <a href="">Privacy </a>
+        <a href="">About </a>
+        <a href="">Security </a>
+        <a href="">Help </a>
+    </footer>
+</body>
+</html>
