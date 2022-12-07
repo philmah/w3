@@ -17,7 +17,7 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
-    padding-right: 80px;
+    padding-right: 1px;
 }
 .logo{
     text-decoration: none;
